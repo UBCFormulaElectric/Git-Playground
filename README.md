@@ -17,11 +17,11 @@ Prerequisites: Access to to the Jira firmware project and a local copy of the Gi
 
 2. Locate the issue key for the Jira issue that you've created. In my case, it's “FW-39”. 
 
-3. Create and checkout a new local Git branch to associate with your issue by entering `git checkout -b [issue key]-[relevant name>]` from your terminal. Don't forget the dash between the issue key and the relevant name. I decided to name my local branch "FW-39-DCM-Implement-Traction-Control". 
+3. Create and checkout a new local Git branch to associate with your issue by entering `git checkout -b <issue key>-<relevant name>` from your terminal. Don't forget the dash between the issue key and the relevant name. I decided to name my local branch "FW-39-DCM-Implement-Traction-Control". 
 
 ![screenshots](screenshots/example-branch-created-terminal.png)
 
-4. Create the upstream branch on GitHub for your local branch by entering `git push -u origin [branch name]` in your terminal.
+4. Create the upstream branch on GitHub for your local branch by entering `git push -u origin <branch name>` in your terminal.
 
 ![screenshots](screenshots/example-push-branch.png)
 
@@ -39,7 +39,7 @@ Prerequisites: Access to to the Jira firmware project and a local copy of the Gi
 
 7. Make a change in your working copy, e.g. modify the README or create a random text file, and add it to the staging area by entering `git add .` (this command actually adds everything to the staging area, which is OK since we've only modified one item).
 
-8. Commit your changes by entering `git commit -m "[Issue key] [Commit description]"`. Jira will only recognize your commit if you have the issue key in your commit description.
+8. Commit your changes by entering `git commit -m "<Issue key> <Commit description>"`. Jira will only recognize your commit if you have the issue key in your commit description.
 
 ![screenshots](screenshots/example-commit-msg.png)
 
@@ -50,7 +50,7 @@ Prerequisites: Access to to the Jira firmware project and a local copy of the Gi
 ![screenshots](screenshots/example-updated-readme-commit-dev-view.png)
 ![screenshots](screenshots/example-1-branch-1-commit.png)
 
-> If you forget to add the issue ID to the commit message, you can simply update the commit message with it by entering `git commit --amend -m "[New commit msg]"`
+> If you forget to add the issue ID to the commit message, you can simply update the commit message with it by entering `git commit --amend -m "<New commit msg>"`
 
 11. Create a pull request by pressing the link "Create pull request" in the details section of the issue. You can also do it manually on GitHub.
 
@@ -70,7 +70,7 @@ Prerequisites: Access to to the Jira firmware project and a local copy of the Gi
 ![screenshots](screenshots/example-auto-transition-under-review-done.png)
 ![screenshots](screenshots/example-done-message.png)
 
-15. Optional but recommended. Clean up your remote branch and your local branch by entering the following command in your terminal `git checkout main && git push --delete origin [branch name] && git branch -D [branch name]`.
+15. Optional but recommended. Clean up your remote branch and your local branch by entering the following command in your terminal `git checkout main && git push --delete origin <branch name> && git branch -D <branch name>`.
 
 ## Resources
 
