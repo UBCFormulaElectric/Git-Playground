@@ -3,15 +3,15 @@
 An open repository for playing around with Git commands.
 
 ## Notes
-- The main branch is **protected**: All commits must be made to a non-protected branch and submitted via a pull request (PR) before they can be merged into a protected branch.
+- The "main" branch is **protected**: All commits must be made to a non-protected branch and submitted via a pull request (PR) before they can be merged into the "main" branch.
 - 1 reviewer is required to merge a PR into the main branch.   
 - This repo is connected to our [firmware Jira project](https://ubcformulaelectric.atlassian.net/jira/software/c/projects/FW/boards/7?atlOrigin=eyJpIjoiYTNlZWQzMjY5MjRlNDEyNmI2MTA4ZDkyMmNhZGZkMjkiLCJwIjoiaiJ9) using the [GitHub for Jira](https://ubcformulaelectric.atlassian.net/jira/marketplace/discover/app/com.github.integration.production) app. Feel free to play around by creating an "example" issue and linking it to a Git branches and commit. Don't forget to delete the "example" issue after.
 
 ## Git + Jira Issue Lifecycle Demo
 
-Prerequisites: Access to to the Jira firmware project and a local copy of the Git-Playground repo.
+Prereqs: Access to to the Jira firmware project and a local copy of the Git-Playground repo.
 
-1. Create an Jira issue under any epic and place it in the Selected For Development status. I've created a task to "Implement traction control" under the "[ECU] DCM" epic. 
+1. Create a Jira issue and place it in the Selected For Development status. I've created a task to "Implement traction control" under the "[ECU] DCM" epic. 
 
 ![Example](screenshots/example-issue-board-view-selected-for-dev.png)
 
