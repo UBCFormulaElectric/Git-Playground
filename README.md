@@ -70,7 +70,7 @@ Prerequisites: Access to to the Jira firmware project and a local copy of the Gi
 ![screenshots](screenshots/example-auto-transition-under-review-done.png)
 ![screenshots](screenshots/example-done-message.png)
 
-15. Optional but recommended. Clean up your remote branch and your local branch by entering the following command in your terminal `git checkout main && git push --delete origin [branch name] && git branch -d [branch name]`.
+15. Optional but recommended. Clean up your remote branch and your local branch by entering the following command in your terminal `git checkout main && git push --delete origin [branch name] && git branch -D [branch name]`.
 
 ## Resources
 
