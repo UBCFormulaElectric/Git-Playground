@@ -21,25 +21,24 @@ Prerequisites: Access to to the Jira firmware project and a local copy of the Gi
 
 ![screenshots](screenshots/example-branch-created-terminal.png)
 
-4. Create the upstream branch on GitHub for your local branch by entering `git push -u origin <branch name>` in your terminal.
+4. Create the upstream branch on GitHub for your local branch by entering `git push -u origin <branch name>`.
 
 ![screenshots](screenshots/example-push-branch.png)
 
-5. If you go back to the Jira project in the board view, you should notice that the issue's status automatically transitioned from "Selected For Development" to "In Progress". This is one of the automation rules defined by the Jira project admin. You should see a comment in the activity section confirming this status transition.
+5. If you go back to  Jira's board view, you should notice that the issue's status transitioned automatically from "Selected For Development" to "In Progress". You should also see a comment in the activity section confirming this status transition.
 
 ![screenshots](screenshots/example-auto-transition-select-for-dev-to-in-progress.png)
 ![screenshots](screenshots/example-auto-transition-comment.png)
 
-> You need to push your local branch or commit to GitHub for Jira to update.
+> You must push your local branch or commit to GitHub for Jira to update.
 
-
-6. Confirm that you can access the development view by pressing the branch icon in the issue card and selecting "View all development information". You can also access the development view from the "Development" field in the issue details.
+6. Confirm that you can access the dev view by pressing the branch icon in the issue card and selecting "View all development information". You can also access the dev view from the "Development" field in the issue details.
 
 ![screenshots](screenshots/example-dev-info-view.png)
 
-7. Make a change in your working copy, e.g. modify the README or create a random text file, and add it to the staging area by entering `git add .` (this command actually adds everything to the staging area, which is OK since we've only modified one item).
+7. Make a change in your working copy, e.g. create a random text file, and add it to the staging area by entering `git add .`(this command actually adds everything to the staging area, which is OK since we've only modified one item).
 
-8. Commit your changes by entering `git commit -m "<Issue key> <Commit description>"`. Jira will only recognize your commit if you have the issue key in your commit description.
+8. Commit your change by entering `git commit -m "<Issue key> <Commit description>"`. Jira will only recognize your commit if you have the issue key in your commit message.
 
 ![screenshots](screenshots/example-commit-msg.png)
 
@@ -50,9 +49,9 @@ Prerequisites: Access to to the Jira firmware project and a local copy of the Gi
 ![screenshots](screenshots/example-updated-readme-commit-dev-view.png)
 ![screenshots](screenshots/example-1-branch-1-commit.png)
 
-> If you forget to add the issue ID to the commit message, you can simply update the commit message with it by entering `git commit --amend -m "<New commit msg>"`
+> If you forget to add the issue ID to the commit message, you can simply update the commit message by entering `git commit --amend -m "<New commit msg>"` and force-pushing the updated commit by entering `git push -f`.
 
-11. Create a pull request by pressing the link "Create pull request" in the details section of the issue. You can also do it manually on GitHub.
+11. Create a PR by pressing "Create pull request" in the issue's detail section. You can also do it manually on GitHub.
 
 12. Verify in Jira that 1 PR is open in the Development issue field. Your issue's status should have automatically transitioned from "In Progress" to "Under Review". You should also see a comment in the activity section confirming this status transition.
 
@@ -70,7 +69,7 @@ Prerequisites: Access to to the Jira firmware project and a local copy of the Gi
 ![screenshots](screenshots/example-auto-transition-under-review-done.png)
 ![screenshots](screenshots/example-done-message.png)
 
-15. Optional but recommended. Clean up your remote branch and your local branch by entering the following command in your terminal `git checkout main && git push --delete origin <branch name> && git branch -D <branch name>`.
+15. Optional but recommended. Clean up your remote branch and your local branch by entering the following command:`git checkout main && git push --delete origin <branch name> && git branch -D <branch name>`.
 
 ## Resources
 
