@@ -51,7 +51,7 @@ Prereqs: Access to to the Jira firmware project and a local copy of the Git-Play
 
 > If you forget to add the issue ID to the commit message, you can simply update the commit message by entering `git commit --amend -m "<New commit msg>"` and force-pushing the updated commit by entering `git push -f`.
 
-11. Create a PR by pressing "Create pull request" in the issue's detail section. You can also do it manually on GitHub.
+11. Create a PR by pressing "Create pull request" in the issue's detail section. You can also accomplish this on GitHub.
 
 12. Verify in Jira that 1 PR is open in the Development issue field. Your issue's status should have automatically transitioned from "In Progress" to "Under Review". You should also see a comment in the activity section confirming this status transition.
 
