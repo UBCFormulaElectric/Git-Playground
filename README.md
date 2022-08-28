@@ -36,7 +36,7 @@ Prereqs: Access to to the Jira firmware project and a local copy of the Git-Play
 
 ![screenshots](screenshots/example-dev-info-view.png)
 
-7. Make a change in your working copy, e.g. create a random text file, and add it to the staging area by entering `git add .`(this command actually adds everything to the staging area, which is OK since we've only modified one item).
+7. Make a change in your working copy, e.g. create a random text file, and add it to the staging area by entering `git add .` (this command actually adds everything to the staging area, which is OK since we've only modified one item).
 
 8. Commit your change by entering `git commit -m "<Issue key> <Commit description>"`. Jira will only recognize your commit if you have the issue key in your commit message.
 
