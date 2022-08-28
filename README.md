@@ -30,6 +30,8 @@ Prerequisites: Access to to the Jira firmware project and a local copy of the Gi
 ![screenshots](screenshots/example-auto-transition-select-for-dev-to-in-progress.png)
 ![screenshots](screenshots/example-auto-transition-comment.png)
 
+> You need to push your local branch or commit to GitHub for Jira to update.
+
 
 6. Confirm that you can access the development view by pressing the branch icon in the issue card and selecting "View all development information". You can also access the development view from the "Development" field in the issue details.
 
@@ -47,6 +49,8 @@ Prerequisites: Access to to the Jira firmware project and a local copy of the Gi
 
 ![screenshots](screenshots/example-updated-readme-commit-dev-view.png)
 ![screenshots](screenshots/example-1-branch-1-commit.png)
+
+> If you forget to add the issue ID to the commit message, you can simply update the commit message with it by entering `git commit --amend -m "[New commit msg]"`
 
 11. Create a pull request by pressing the link "Create pull request" in the details section of the issue. You can also do it manually on GitHub.
 
